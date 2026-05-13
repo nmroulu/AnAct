@@ -7,8 +7,8 @@ from Activity import Latex_Analytical_expressions_for_potential_derivatives as L
 
 # 1) Here we put our topology and trajectory files.
 
-topol="Test_NaCl.gro"
-traj="Test_NaCl.xtc"
+topol="Test_NaCl.gro" #Put your topology
+traj="Test_NaCl.xtc" #Put your trajectory
 
 
 u=mda.Universe(topol,traj)
