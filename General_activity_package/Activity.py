@@ -4,6 +4,7 @@ from sympy import *
 import re
 from copy import deepcopy
 import matplotlib.pyplot as plt
+from IPython.display import display, Math
 
 def subindices(n):
     """
@@ -351,7 +352,16 @@ def Latex_Analytical_expressions_for_potential_derivatives(n):
     lines.append(f"{latex(Dsym)} &= {latex(D)} \\\\")
     
     body = "\n".join(lines)
-    print("\\begin{align*}\n" + body + "\n\\end{align*}")
+    return body
+    
 
     
+def Latex_expressions(n):
+    body=Latex_Analytical_expressions_for_potential_derivatives(n)
+    print("\\begin{align*}\n" + body + "\n\\end{align*}")
     
+    
+def Python_expressions(n):
+    body=Latex_Analytical_expressions_for_potential_derivatives(n)
+    expression="\\begin{align*}\n" + body +"\n \\end{align*}"
+    display(Math(expression))

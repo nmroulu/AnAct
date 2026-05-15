@@ -1,0 +1,6 @@
+numpy
+sympy
+random
+re
+copy
+IPython.display
