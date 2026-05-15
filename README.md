@@ -7,3 +7,6 @@ The scripts Activity.py and Gij_pairs_at_TL.py are called within User_main_scrip
 MDAnalysis package is used throughout the scripts. Thus, MD trajectories and topologies readable by the MDAnalysis package are expected from the user.
 
 Analyses and examples of the algorithm and its limitations are found in the article soon to be submitted.
+
+An interactive Jupyter-Notebook that prints analytical expressions cen be launched from
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nmroulu/AnAct/HEAD?filepath=Analytical_expressions_notebook%2FAnalytical_Expressions.ipynb)
