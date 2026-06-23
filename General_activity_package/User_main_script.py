@@ -27,7 +27,8 @@ solvent=['SOL']
 # If we want to compute the center of mass of the solvent for each solvent molecule and for each snapshot, Center_of_mass_of_solvent = 'on'. Otherwise, Center_of_mass_of_solvent = 'off'.
 Center_of_mass_of_solvent = 'off'
 
-# 5) We need to provide the experimental value of the bulk density of the solvent and its molar mass in order to obtain its activity:
+# 5) We need to provide the bulk density of the solvent and its molar mass in order to obtain its activity. The default value is the experimental bulk water density at 25⁰C and 1 atm, but if 
+# the water bulk density from the chosen force field is available, or the conditions (Temperature/Pressure) are different, feel free to replace it with the correct value.
 Experimental_bulk_density = 997.05e3 #g/m³, this is the experimental water bulk density at 25⁰C and 1 atm.
 Molar_mass = 18.015 #g/mol, for the case of water.
 
